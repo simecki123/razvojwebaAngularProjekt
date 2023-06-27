@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file */
+
+/* Define the deeppurple-amber theme colors */
+$mat-deeppurple-50: #ede7f6;
+$mat-deeppurple-900: #311b92;
+$mat-deeppurple-500: #651fff;
+$mat-deeppurple-300: #9575cd;
+$mat-deeppurple-100: #d1c4e9;
+
+/* Add custom global styles */
+
+/* Apply a background color to the body */
+html, body {
+    height: 100%;
+    background-color: #b9abf4;
+  }
+
+/* Add a pretty background gradient */
+.main-container {
+  background: linear-gradient(45deg, $mat-deeppurple-100, $mat-deeppurple-50);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the app title */
+h1 {
+  font-size: 24px;
+  color: $mat-deeppurple-900;
+}
+
+/* Style the "Start new Game" button */
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: $mat-deeppurple-500;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the message when a player wins */
+h2 {
+  font-size: 20px;
+  color: $mat-deeppurple-900;
+}
+
+/* Style the main game board */
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 10px;
+}
+
+/* Style the individual squares */
+app-square {
+  border: 1px solid $mat-deeppurple-300;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Style the squares on hover */
+app-square:hover {
+  background-color: $mat-deeppurple-100;
+}

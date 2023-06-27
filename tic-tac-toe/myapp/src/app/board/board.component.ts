@@ -63,3 +63,4 @@ export class BoardComponent implements OnInit {
     return '';
   }
 }
+
